@@ -64,7 +64,7 @@ CloudFormation do
       Tags ecs_tags
     }
     
-    InstanceProfile(:InstanceProfile) {
+    IAM_InstanceProfile(:InstanceProfile) {
       Path '/'
       Roles [Ref(:Role)]
     }
